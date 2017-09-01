@@ -1,11 +1,13 @@
 import threading
-
 import logging
+import pyautogui
+import time
 
 logger = logging.getLogger(__name__)
 logging.basicConfig(level=logging.DEBUG,
                     format='[%(asctime)s %(threadName)s] %(message)s',
                     datefmt='%H:%M:%S')
+
 
 class AutoClick(threading.Thread):
     def __init__(self, x=None, y=None):
