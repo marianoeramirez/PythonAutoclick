@@ -1,7 +1,7 @@
 import time, pyautogui, keyboard
 
-cs = int(input("Cliques por segundo: "))
-
+cs = int(input("Clicks per second: "))
+print("Press 'alt' to close autoclicker")
 time.sleep(4)
 
 while True:
@@ -14,6 +14,6 @@ while True:
             time.sleep(1)
     else:
         break
-        print("Encerrando...")
+        print("Closing...")
         time.sleep(1)
         exit()
